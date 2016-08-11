@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -34,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Ristorante Con Fusion</a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" height=30 width=41></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -43,7 +42,7 @@
                     <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                         role="button" aria-haspopup="true" aria-expanded="false">
+                         role="button" aria-haspopup="true" aria-expanded="false"><span class=" glyphicon glyphicon-list-alt" aria-hidden="true"></span>
                          Menu <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Appetizers</a></li>
@@ -56,8 +55,22 @@
                             <li><a href="#">Weekend Brunch</a></li>
                         </ul>
                      </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contactus.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
                 </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label style="color:#fff;font-weight:normal">
+                            <input type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info">Signin</button>
+                </form>
             </div>
         </div>
     </nav>         
@@ -72,7 +85,12 @@
                     <p style="padding:40px;"></p>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:20px;"></p>
+                    <img src="img/logo.png" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <a href="#reserve" class="btn btn-warning" style="margin-top: 100px;">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -85,9 +103,22 @@
                 <h3 align=center>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                <p><a  href="#">More &raquo;</a></p>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object img-thumbnail"
+                         src="img/uthappizza.png" alt="Uthappizza">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">Uthappizza <span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
+                        <p>A unique combination of Indian Uthappam (pancake) and
+                          Italian pizza, topped with Cerignola olives, ripe vine
+                          cherry tomatoes, Vidalia onion, Guntur chillies and
+                          Buffalo Paneer.</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -98,9 +129,18 @@
                 <h3 align=center>This Month's Promotions</h3>
             </div>
             <div class="col-xs-12 col-sm-9">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-                <p><a href="#">More &raquo;</a></p>
+                <div class="media">                    
+                    <div class="media-body">
+                        <h2 class="media-heading">Weekend Grand Buffet</h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                    <div class="media-right media-middle">
+                        <a href="#">
+                            <img class="media-object img-thumbnail" src="img/buffet.png">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -110,10 +150,86 @@
                 <h3 align=center>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-                <p><a href="#">More &raquo;</a></p>
+                 <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="img/alberto.png" alt="Alberto Somayya">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide
+                         International experience having worked closely with
+                         whos-who in the culinary world, he specializes in
+                          creating mouthwatering Indo-Italian fusion experiences.
+                         </p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content" id="reserve">
+            <div class="col-xs-12 col-sm-3">
+                <h3>Reserve a Table</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="guests" class="col-sm-2 control-label">Number of Guests</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                <label style="margin-right: 10px;">
+                                  <input type="radio" name="optionReserve" value="1"> 1
+                                </label>
+                                <label style="margin-right: 10px;">
+                                  <input type="radio" name="optionReserve" value="2"> 2
+                                </label>
+                                <label style="margin-right: 10px;">
+                                  <input type="radio" name="optionReserve" value="3"> 3
+                                </label>
+                                <label style="margin-right: 10px;">
+                                  <input type="radio" name="optionReserve" value="4"> 4
+                                </label>
+                                <label style="margin-right: 10px;">
+                                  <input type="radio" name="optionReserve" value="5"> 5
+                                </label>
+                                <label style="margin-right: 10px;">
+                                  <input type="radio" name="optionReserve" value="6"> 6
+                                </label>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Date and time</label>
+                        <div class="col-sm-10">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="has-feedback">
+                                        <input type="password" class="form-control" placeholder="Date">
+                                        <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-sm-offset-1">
+                                    <div class="has-feedback">
+                                        <input type="password" class="form-control" placeholder="Time">
+                                        <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button class="btn btn-primary">Reserve</button>
+                        </div>                        
+                    </div>
+                </form>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <strong>Warning:</strong> Please <a href="tel:+85212345678" style="color:#777;"><strong>call</strong></a> us to reserve for more than six guests.
+                </div>
             </div>
         </div>
     </div>
@@ -124,10 +240,10 @@
                 <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-5">

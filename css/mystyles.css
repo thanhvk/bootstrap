@@ -60,3 +60,13 @@ address{
     margin:0px;
     color:#0f0f0f;
 }
+
+@media (min-width: 768px) {
+    .navbar-form .checkbox label, .navbar-form .radio label {
+        padding-left: 20px !important;
+    }
+    .navbar-form .checkbox input[type=checkbox], .navbar-form .radio input[type=radio] {
+        position: absolute !important;
+        margin-left: -20px;
+    }
+}
